@@ -28,7 +28,7 @@ private boolean terminaAmanha(Sessao sessao) {
 	LocalDateTime ultimoSegundoDeHoje = LocalDateTime.of(LocalDate.now(), LocalTime.MAX);
 	
 	if(terminoSessaoNova.isAfter(ultimoSegundoDeHoje)) {
-		
+		return true;
 	}
 	return false;
 }
